@@ -41,6 +41,9 @@ public class LenevoDetails extends HttpServlet {
 					break;
 					}
 					
+					out.println("<br><br/><a href=\"index.html\"> Exit the page</a>");		
+
+					
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -40,6 +40,8 @@ public class DellDetails extends HttpServlet {
 					out.print("ID = "+rs.getString(1)+"<br>"+"Product Name = "+rs.getString(2)+"<br>"+"Product Price = "+rs.getString(3)+"<br>"+"Product Date added = "+rs.getString(4));
 					break;
 					}
+					out.println("<br><br/><a href=\"index.html\"> Exit the page</a>");		
+
 					
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
