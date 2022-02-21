@@ -16,26 +16,26 @@ public class SearchServlet extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		String name = request.getParameter("name");
+		String ID = request.getParameter("ID");
 		PrintWriter out=response.getWriter();
-		if(name.equals("HP"))
+		if(ID.equals("1"))
 		{
 		HttpSession session = request.getSession();
-		session.setAttribute("name", name);
+		session.setAttribute("ID", ID);
 		response.sendRedirect("HPDetails");
 		}
 		
-		if(name.equals("LENEVO"))
+		if(ID.equals("2"))
 		{
 		HttpSession session = request.getSession();
-		session.setAttribute("name", name);
+		session.setAttribute("ID", ID);
 		response.sendRedirect("LenevoDetails");
 		}
 		
-		if(name.equals("DELL"))
+		if(ID.equals("3"))
 		{
 		HttpSession session = request.getSession();
-		session.setAttribute("name", name);
+		session.setAttribute("ID", ID);
 		response.sendRedirect("DellDetails");
 		}
 		else
